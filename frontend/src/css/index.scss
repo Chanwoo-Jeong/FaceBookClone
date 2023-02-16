@@ -1,0 +1,688 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header a {
+  margin-right: 15px;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  background-color: #f0f2f5;
+}
+
+header {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+}
+
+.login-layer {
+  width: 960px;
+  margin: 0 auto;
+  margin-top: 140px;
+
+  .logo-box {
+    display: inline-block;
+    width: 560px;
+    height: 360px;
+    vertical-align: top;
+
+    .my-image>img {
+      width: 300px;
+      margin-left: -26px;
+      margin-top: 44px;
+    }
+
+    &>h2 {
+      margin: 0;
+      padding: 0;
+      font-size: 28px;
+      font-weight: normal;
+      line-height: 32px;
+      width: 500px;
+    }
+  }
+
+  .login-box {
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    width: 400px;
+    height: 360px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 0 2px #e7f3ff;
+    text-align: center;
+    background: white;
+  }
+
+  .login-button {
+    width: 100%;
+    height: 48px;
+    background-color: #1877f2;
+    border: none;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 20px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 12px;
+  }
+
+  .div-line {
+    border-bottom: 1px solid #dadde1;
+    width: 100%;
+    margin: 20px 0;
+  }
+
+  a {
+    margin-top: 12px;
+    display: block;
+    color: #1877f2;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 20px;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .regist {
+    margin-top: 20px;
+
+    .my-button {
+      width: 200px;
+      margin: auto 0;
+    }
+  }
+
+  .new-page {
+    margin-top: 60px;
+    font-size: 14px;
+
+    &>a {
+      font-size: 14px;
+      display: inline-block;
+      text-decoration: none;
+      font-weight: 600;
+      color: inherit;
+    }
+
+    &>a:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.regist-layer {
+  /* 컨테이너 중앙 정령 */
+  width: 420px;
+  margin: 0 auto;
+
+  /* 로고 이미지 */
+  .logo {
+    text-align: center;
+    margin-top: 10px;
+
+    .my-image>img {
+      height: 100px;
+      display: inline-block;
+    }
+  }
+
+  /* 카드 배경 및 그림자 설정 */
+  .card {
+    position: relative;
+    align-items: center;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 0 2px #e7f3ff;
+    box-sizing: border-box;
+
+    /* 카드 헤더 */
+    .header {
+      padding: 10px;
+      margin-top: 10px;
+
+      &>.my-title {
+        font-size: 25px;
+        line-height: 32px;
+        text-align: center;
+      }
+
+      &>.my-subtitle {
+        color: #606770;
+        font-size: 15px;
+        line-height: 24px;
+        text-align: center;
+      }
+    }
+
+    /* 카드 바디 */
+    .body {
+      padding: 20px;
+
+      input {
+        margin: 5px 2px;
+        padding: 10px;
+      }
+
+      .in-name>.my-input {
+        width: calc(50% - 4px);
+        display: inline-block;
+      }
+    }
+
+    .in-age select,
+    .in-type .my-radio {
+      width: calc(100% / 3 - 4px);
+      display: inline-block;
+      height: 36px;
+      padding: 5px 10px;
+      box-sizing: border-box;
+    }
+
+    /* 라디오 버튼 텍스트 */
+    .my-subtitle {
+      line-height: 20px;
+      margin-top: 10px;
+    }
+
+    /* 하단의 설명 */
+    .guide {
+      color: #777;
+      font-size: 11px;
+    }
+
+    /* 가입하기 버튼 */
+    .regist {
+      width: 200px;
+      margin: 20px auto;
+    }
+
+    /* 가입하고 버튼 및 로그인 레이아웃 */
+    .login {
+      text-align: center;
+    }
+  }
+}
+
+.comment-box {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  .comment-low {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+  }
+
+  ul {
+    padding: 20px;
+  }
+
+  li {
+    list-style: none;
+    padding: 10px;
+    border-top: 1px solid gray;
+    font-size: 12px;
+    white-space: pre-line;
+
+    .buttons {
+      text-align: right;
+
+      .my-button {
+        display: inline-block;
+        margin-left: 10px;
+        font-size: 12px;
+        width: 50px;
+        height: 20px;
+        border-radius: 4px;
+      }
+    }
+  }
+
+  .comment-input {
+    padding: 10px;
+  }
+
+  textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  .my-button {
+    display: block;
+    width: 60px;
+    height: 30px;
+    font-size: 16px;
+    margin-left: auto;
+  }
+
+}
+
+.identify-layer {
+  .logo-box {
+    padding-top: 5px;
+    text-align: left;
+    background: white;
+    box-shadow: 1px 2px rgba(0, 0, 0, 0.1);
+
+    img {
+      height: 50px;
+    }
+  }
+
+  .card-box {
+    border: none;
+    border-radius: 8px;
+    box-shadow: 1px 2px rgba(0, 0, 0, 0.1);
+    margin: auto;
+    width: 500px;
+    background: white;
+    margin-top: 90px;
+
+    .head {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      padding-bottom: 0px;
+      height: 60px;
+
+      .my-title {
+        padding: 10px;
+        padding-left: 20px;
+      }
+    }
+
+    .body {
+      margin: 16px;
+
+      .my-input {
+        margin-top: 10px;
+      }
+    }
+
+    .foot {
+      height: 70px;
+      text-align: right;
+      padding-right: 20px;
+      border-top: 1px solid rgba(0, 0, 0, 0.1);
+      padding: 16px;
+      box-sizing: border-box;
+
+      .my-button {
+        display: inline-block;
+        width: 100px;
+        margin-left: 20px;
+      }
+    }
+  }
+}
+
+.header {
+  height: 60px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.1);
+  background: white;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+
+  img {
+    height: 24px;
+  }
+
+  &>div {
+    height: 100%;
+  }
+
+  .head-logo,
+  .head-side {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0;
+  }
+
+  .head-logo {
+    left: 0;
+
+    img {
+      height: 40px;
+      margin-left: 10px;
+    }
+
+    input {
+      width: 200px;
+      line-height: 40px;
+      margin-left: 10px;
+      padding: 0 20px;
+      border-radius: 30px;
+      border: none;
+      outline: none;
+      background-color: rgb(240, 240, 240);
+      font-size: 16px;
+    }
+  }
+
+  .head-nav {
+    display: block;
+    text-align: center;
+
+    nav {
+      display: flex;
+      height: 100%;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .btn-box {
+      width: 140px;
+      /* border: 1px solid;  */
+      height: 46px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 4px;
+      border-radius: 5px;
+      position: relative;
+    }
+
+    .btn-box:hover {
+      background-color: rgb(240, 240, 240);
+      cursor: pointer;
+    }
+
+    .btn-line {
+      background-color: #1b74e4;
+      width: 100%;
+      height: 5px;
+      position: absolute;
+      bottom: -8px;
+      display: none;
+    }
+
+    .btn-box.active>.btn-line {
+      display: block;
+    }
+  }
+
+  .head-side {
+    right: 0;
+    padding-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .btn-box {
+      width: 40px;
+      height: 40px;
+      margin: 0 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: rgb(240, 240, 240);
+      border-radius: 30px;
+    }
+
+    .btn-box:hover {
+      background-color: rgb(220, 220, 220);
+      cursor: pointer;
+    }
+
+    img {
+      height: 20px;
+    }
+  }
+}
+
+.home-layer {
+  background-color: #f0f2f5;
+  height: 4000px;
+  width: 800px;
+  margin: 10px auto;
+
+  .list {
+    list-style: none;
+  }
+
+  li {
+    margin: 20px 0;
+  }
+
+  .card {
+    border-radius: 8px;
+    background-color: white;
+    /* border: 1px solid #eee;  */
+    box-shadow: 1px 2px rgba(0, 0, 0, 0.1);
+  }
+
+  .head {
+    padding: 10px 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    position: relative;
+  }
+
+  .head .logo {
+    height: 40px;
+    border-radius: 50px;
+    display: inline-block;
+  }
+
+  .head .title {
+    font-weight: bold;
+    position: relative;
+    margin-left: 10px;
+  }
+
+  .head .more img {
+    height: 20px;
+    padding: 10px;
+    border-radius: 30px;
+    float: right;
+  }
+
+  .head .more img:hover {
+    background-color: rgb(240, 240, 240);
+  }
+
+  .head .text {
+    padding-top: 10px;
+    white-space: pre-line;
+  }
+
+  .body {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .body .image {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .body .text {
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    white-space: pre-line;
+  }
+
+  .body button {
+    height: 40px;
+    padding: 8px 12px;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  .body button:hover {
+    background-color: rgb(220, 220, 220);
+  }
+
+  p.blue {
+    color: #1877f2;
+  }
+
+  p.grey {
+    color: #65676b;
+  }
+
+  p.bold {
+    font-weight: bold;
+  }
+
+  p.sm {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+
+  .foot {
+    height: 40px;
+    font-size: 0px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .foot img {
+    height: 20px;
+  }
+
+  .foot .btn-box {
+    display: flex;
+    flex-grow: 1;
+    font-size: 16px;
+    flex-direction: row;
+    align-items: center;
+    margin: 2px 0;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  .foot .btn-box:hover {
+    background-color: rgb(240, 240, 240);
+  }
+
+  .foot .btn-box>div {
+    margin: 0 auto;
+    display: flex;
+  }
+
+  .foot .btn-box img {
+    margin-right: 10px;
+  }
+}
+
+.board-layer {
+  &>div {
+    max-width: 1024px;
+    margin: 0 auto;
+    list-style: none;
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .buttons {
+      margin-bottom: 20px;
+      text-align: right;
+
+      button {
+        margin-left: 10px;
+        width: 60px;
+        height: 30px;
+      }
+    }
+  }
+
+  .list {
+    li {
+      line-height: 40px;
+      border-bottom: solid 1px gray;
+      padding: 0 10px;
+
+      .title {
+        font-size: 16px;
+        font-weight: bold;
+      }
+
+      .date {
+        font-size: 12px;
+        float: right;
+      }
+
+      &:hover {
+        cursor: pointer;
+        background-color: #b9d8ff;
+      }
+    }
+  }
+
+  .view {
+    .head {
+      height: 40px;
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 20px;
+
+      .date {
+        float: right;
+        color: #777;
+      }
+    }
+
+    .text {
+      min-height: 400px;
+      height: 400px;
+      font-size: 14px;
+      white-space: pre-line;
+      border: 1px solid gray;
+      padding: 10px;
+
+      textarea {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  .edit {
+    .head {
+      height: 40px;
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 20px;
+
+      .date {
+        float: right;
+        color: #777;
+      }
+    }
+
+    .text {
+      min-height: 400px;
+      height: 400px;
+      font-size: 14px;
+      white-space: pre-line;
+
+      textarea {
+        padding: 10px;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
